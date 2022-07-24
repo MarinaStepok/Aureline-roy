@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO optimization -->
+    <title>Photographe contemporaine</title>
+    <meta content="" name="description">
+	<meta content="" name="keywords">
+
+    <!-- Mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="container">
+
+             <!-- Start navbar -->
+			<nav id="navbar" class="navbar">
+				<ul>
+					<li><a id="homeActive" class="nav-link scrollto active" href="#">Perfomances</a></li>
+					<li><a class="nav-link scrollto" href="#Expositions">Expositions</a></li>
+					<li><a class="nav-link scrollto" href="#Photographies">Photographies</a></li>
+					<li><a class="nav-link scrollto" href="#Portfolio">Portfolio</a></li>
+					<li><a class="nav-link scrollto" href="#Videos">Videos</a></li>
+					<li><a class="nav-link scrollto" href="#Editions">Editions</a></li>
+                    <li><a class="nav-link scrollto" href="#Infos">Infos</a></li>
+					<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+				</ul>
+				<i class="fa-solid fa-plus mobile-nav-toggle"></i>
+			</nav>
+            <!-- End navbar -->
+
+		</div>
+    </header>
+
+    <!-- Start photographer-->
+    <section class="photographer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="photographer-title">
+                            <h1>PERFORMER & PHOTOGRAPHE</h1>
+                            <h2>AURELINE ROY</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End photographer --> 
+
+    <!-- Start portfolio -->
+    <section class="portfolio">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Voir mon portfolio</p>
+            </div>
+
+            <!-- Control buttons -->
+            <div id="BtnContainer">
+                <button class="btn btn-filter active" onclick="filterSelection('all')"> Afficher tout</button>
+                <button class="btn btn-filter" onclick="filterSelection('themes')"> Thèmes</button>
+                <button class="btn btn-filter" onclick="filterSelection('materiaux')"> Matériaux</button>
+                <button class="btn btn-filter" onclick="filterSelection('epoques')"> Époques</button>
+            </div>
+
+            <!-- The filterable elements -->
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box filterDiv themes">
+                            <img src="img/17_viande.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon-box filterDiv themes">
+                            <img src="img/6_contrainte1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon-box filterDiv themes">
+                            <img src="img/15_cacis08.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box filterDiv materiaux">
+                            <img src="img/15_pirene-vendrell.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="icon-box filterDiv materiaux">
+                            <img src="img/22_aurelineroy6site.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box filterDiv epoques">
+                            <img src="img/4_nomade01_v3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon-box filterDiv epoques">
+                            <img src="img/5_dosjenny.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon-box filterDiv epoques">
+                            <img src="img/27_photosite1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box filterDiv materiaux">
+                            <img src="img/22_esca3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="icon-box filterDiv materiaux">
+                            <img src="img/24_2020site.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    </section>
+    <!-- End portfolio -->
+
+    <!-- Start about -->
+    <section class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>About</h2>
+                <p>Lire sur moi</p>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-lg-4 col-md-5 order-1 order-md-2">
+                    <div class="about-img">
+                         <img src="img/1_femmebuche.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-7">
+                    <div class="text__container">
+                        <div class="about-text">
+                            <h4>Performer & Photographe</h4>
+                            <p> Depuis une dizaine d'années, je me photographie à l'aide d'une télécommande.
+                            Mon corps est mon objet d'étude comme dans la performance. 
+                            Je cherche à m'enfermer dans l'image, je suis mon propre modèle.</p>
+
+                            <p> <strong>SALO IX</strong> - Salon du dessin érotique 2021
+                            Commissaire Laurent Quénéhen
+                            Paris, 22 au 25 juillet 2021
+                            Présentation d'un diptyque photographique</p>
+
+                            <p>Diplômée en Arts plastiques et en Arts du spectacle chorégraphique, 
+                            Aureline Roy est passée de la danse classique à la performance. 
+                            Depuis plusieurs années, elle travaille sur la problématique du corps contraint. 
+                            Au moyen de la performance, elle cherche à explorer les limites du corps, 
+                            ne concevant pas la performance comme une simple représentation ou un simulacre, 
+                            mais comme la manière qui permet d'exprimer directement l'émotion ou l'état de 
+                            tension.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-lg-8 col-md-7 order-md-2">
+                    <div class="text__container">
+                        <div class="about-text">
+                            <p> Elle porte une attention particulière au corps et apprécie de tester son 
+                            endurance, ses limites, ses réactions comme si c'était un matériau malléable 
+                            dont il fallait le presser pour en extraire une émotion, justement à l'endroit 
+                            même où le corps émet une résistance. 
+                            C'est une façon de s'inscrire dans la réalité, de montrer un corps réel.</p>
+
+                            <p>En 2011, elle rencontre José Alfarroba (directeur du Théâtre de Vanves). 
+                            Il l'invite pour un temps de résidence à créer son premier solo « Contraintes 
+                            et Pressions » programmé dans le cadre du festival Artdanthé. Ensuite, elle 
+                            décide déplorer le froid, allongée sur un lit de glace. Qu'est-ce qui pousse 
+                            le corps à se mouvoir ? Les réactions du corps son pourelle les prémisses de 
+                            la chorégraphie. Elle présente donc la même année « Sous condition » à 
+                            l'occasion d'un festival de performance à l'Institut français de Valencia 
+                            (Espagne).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-5 ">
+                    <div class="about-img">
+                        <img src="img/1_dosforetbody.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about -->
+
+    <!-- Start contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Contactez moi</p>
+            </div>
+        
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="info">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                            </svg>
+                        </div>
+
+                        <div class="info-title">
+                            <h4>Aureline Roy</h4>
+                            <p>Email: aurelineroy@yahoo.fr</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form method="post" action="#">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="firstname" placeholder="Prénom" class="form-control mb-3" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Nom" class="form-control mb-3" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Email" class="form-control mb-3" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone" placeholder="Tel" class="form-control mb-3" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea name="message" placeholder="Message" class="form-control mb-3" id="yourText" cols="30"
+                                        rows="7"></textarea>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-center mb-3">
+                                    <button class="btn btn-primary">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="img/11_atelierweb.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End contact -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 copyright mb-3">
+                        <p>@ copyright 2022 Aureline Roy</p>
+                    </div> 
+
+                    <div class="col-lg-3 right-links mb-3">
+                        <div>
+                            <a href="#">Mentions légales</a> 
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 right-links mb-3">
+                        <div>
+                            <a href="#">Cookie policies</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 social mb-3">
+                        <div class="social-links">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    
+
+    <!-- Scripts JS -->
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/contact-form.js"></script>
+    
+</body>
+
+</html>
